@@ -1,0 +1,7 @@
+version: '2'
+services:
+  nginx_static:
+    build: .
+    restart: always
+    ports:
+      - 8080:80
