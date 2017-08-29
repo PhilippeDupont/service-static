@@ -1,0 +1,1 @@
+We have to keep this folder (`avatars/`) to resolve old URL used into email.
