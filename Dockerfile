@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/nginx/
-FROM nginx:1.13.3
+FROM nginx:1.13.12
 MAINTAINER Elium Tech
 
 RUN apt-get update && \
