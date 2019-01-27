@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="margin: 0; padding: 0;">
+<head>
+<meta charset="UTF-8">
+<title>Elium Email Signature Generator</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./generator.css">
+</head>
+
+<body class="d-flex flex-column">
+<div class="header">
+  <img class="header__logo" src="./assets/logo_elium.png" />
+  <div class="header__title">Email Signature Generator</div>
+</div>
+<div class="block block--grey">
+  <div class="pb-3">
+    <h3>Eliumiennes, Eliumiens!</h3>
+    <cite>Click on a person to got the signature.</cite>
+  </div>
+  <div id="people" class="block__person"></div>
+</div>
+<div id="signature" class="block d-flex flex-grow-1 flex-column">
+  <div class="block__tab btn-group btn-group-toggle buttons">
+    <label class="btn btn-secondary active" data-type="preview">
+      <input type="radio" name="options" autocomplete="off"> Preview
+    </label>
+    <label class="btn btn-secondary" data-type="html">
+      <input type="radio" name="options" autocomplete="off" checked> HTML
+    </label>
+  </div>
+  <div id="tab-content" class="block__content d-flex flex-grow-1 pt-3"></div>
+  <div class="d-flex justify-content-end">
+      <button id="btn-copy" class="btn btn-primary" type="button">Copy signature as HTML</button>
+  </div>
+</div>
+<input id="input-hidden" data-index="0" style="position: absolute; top: 0; left: -200px; width: 10px;"></textarea>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+<script src="../_utils/consoleElium.js"></script>
+<script src="./generator.js"></script>
+
+</html>
