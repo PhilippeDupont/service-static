@@ -12,7 +12,7 @@ const signature = (person) => {
         <td style="padding: 0 30px;" valign="top">
           <img width="90px" height="90px" src="./assets/${img}" />
         </td>
-        <td>
+        <td style="padding-bottom: 20px">
           <div style="font-family: Avenir-Heavy; font-size: 16px; color: #4A4A4A;letter-spacing: 0.82px; line-height: 22px;">
             ${_.capitalize(firstname)} ${_.capitalize(lastname)}
           </div>
@@ -29,32 +29,38 @@ const signature = (person) => {
             </div>` : ''}
           </div>
 
-          <div style="padding-bottom: 30px;">
-            <a href="https://twitter.com/Elium_tech" target="_blank" style="text-decoration: none">
+          <div style="padding-bottom: 20px;border-bottom: 1px solid #D8D8D8">
+            <a href="https://twitter.com/Elium_tech" target="_blank" style="text-decoration: none; color: white; width: 22px; height: 22px;">
                 <img src="https://static.elium.tv/email/assets/i_twitter.png" />
             </a>
-            <a href="https://www.facebook.com/EliumTV" target="_blank" style="text-decoration: none">
+            <a href="https://www.facebook.com/EliumTV" target="_blank" style="text-decoration: none; color: white; width: 22px; height: 22px;">
                 <img src="https://static.elium.tv/email/assets/i_facebook.png" />
             </a>
-            <a href="https://www.linkedin.com/company/elium" target="_blank" style="text-decoration: none">
+            <a href="https://www.linkedin.com/company/elium" target="_blank" style="text-decoration: none; color: white; width: 22px; height: 22px;">
                 <img src="https://static.elium.tv/email/assets/i_linkedin.png" />
             </a>
           </div>
-
-          <div>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>
+          <a href="https://static.elium.tv/email/index_event.html">
+            <img src="https://static.elium.tv/email/i_event.png">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>
+          <div style="padding-top: 15px;">
             <a href="https://www.elium.io" target="_blank" style="text-decoration: none">
               <img width="80px" height="29px" src="https://static.elium.tv/email/assets/logo_elium.png" />
             </a>
           </div>
         </td>
       </tr>
-      <tr>
-        <td style="padding-top: 30px">
-          <a href="https://static.elium.tv/email/index_event.html">
-            <img src="https://static.elium.tv/email/i_event.png">
-          </a>
-        </td>
-      </tr>
+      
     </tbody>
   </table>`
 }
@@ -65,13 +71,25 @@ const app = () => {
     firstname: 'fabien',
     lastname: 'livet',
     title: 'CEO',
-    phone: '+33 (0) 6 66 90 97 45 '
+    phone: '+33 (0) 6 66 90 97 45'
   }, {
     img: 'benjamin_longearet.png',
     firstname: 'benjamin',
     lastname: 'longearet',
     title: 'CTO',
-    phone: '+33 (0) 6 15 44 05 74 '
+    phone: '+33 (0) 6 15 44 05 74'
+  }, {
+    img: 'julie_chaplain.png',
+    firstname: 'julie',
+    lastname: 'chaplain',
+    title: 'Sales Director France',
+    phone: '+33 (0) 6 59 84 31 64'
+  }, {
+    img: 'jules_mary.png',
+    firstname: 'jules',
+    lastname: 'mary',
+    title: 'Product & Operation Specialist',
+    phone: '+33 (0) 6 23 76 27 49'
   }, {
     img: 'clementine_stora.png',
     firstname: 'clémentine',
