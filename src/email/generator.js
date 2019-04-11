@@ -79,6 +79,12 @@ const app = () => {
     title: 'CTO',
     phone: '+33 (0) 6 15 44 05 74'
   }, {
+    img: 'alice_besson.png',
+    firstname: 'alice',
+    lastname: 'besson',
+    title: 'Marketing Manager',
+    phone: '+33 (0) 9 72 84 09 67'
+  }, {
     img: 'julie_chaplain.png',
     firstname: 'julie',
     lastname: 'chaplain',
