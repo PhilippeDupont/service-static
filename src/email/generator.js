@@ -46,7 +46,7 @@ const signature = (person) => {
         <td>&nbsp;</td>
         <td>
           <a href="https://static.elium.tv/email/index_event.html">
-            <img src="https://static.elium.tv/email/i_event.png">
+            <img src="https://static.elium.tv/email/i_event.png?${new Date()}">
           </a>
         </td>
       </tr>
